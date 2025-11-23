@@ -1,2 +1,6 @@
-package com.pm.parkinglot.models;public enum ParkingLotStatus {
+package com.pm.parkinglot.models;
+
+public enum ParkingLotStatus {
+    OPEN,
+    CLOSE,
 }

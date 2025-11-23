@@ -1,2 +1,79 @@
-package com.pm.parkinglot.models;public class Bill {
+package com.pm.parkinglot.models;
+
+import java.util.Date;
+import java.util.List;
+
+public class Bill extends BaseModel {
+    private Ticket ticket;
+    private Gate gate;
+    private Operator generatedBy;
+    private BillStatus billStatus;
+    private Date exitTime;
+    private int amount;
+    private List<Payment> payments;
+    private FeeCalculationType feeCalculationType;
+
+    public Ticket getTicket() {
+        return ticket;
+    }
+
+    public void setTicket(Ticket ticket) {
+        this.ticket = ticket;
+    }
+
+    public Gate getGate() {
+        return gate;
+    }
+
+    public void setGate(Gate gate) {
+        this.gate = gate;
+    }
+
+    public Operator getGeneratedBy() {
+        return generatedBy;
+    }
+
+    public void setGeneratedBy(Operator generatedBy) {
+        this.generatedBy = generatedBy;
+    }
+
+    public BillStatus getBillStatus() {
+        return billStatus;
+    }
+
+    public void setBillStatus(BillStatus billStatus) {
+        this.billStatus = billStatus;
+    }
+
+    public int getAmount() {
+        return amount;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
+    }
+
+    public Date getExitTime() {
+        return exitTime;
+    }
+
+    public void setExitTime(Date exitTime) {
+        this.exitTime = exitTime;
+    }
+
+    public List<Payment> getPayments() {
+        return payments;
+    }
+
+    public void setPayments(List<Payment> payments) {
+        this.payments = payments;
+    }
+
+    public FeeCalculationType getFeeCalculationType() {
+        return feeCalculationType;
+    }
+
+    public void setFeeCalculationType(FeeCalculationType feeCalculationType) {
+        this.feeCalculationType = feeCalculationType;
+    }
 }

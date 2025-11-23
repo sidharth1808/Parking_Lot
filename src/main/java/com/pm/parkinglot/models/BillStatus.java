@@ -1,2 +1,6 @@
-package com.pm.parkinglot.models;public enum BillStatus {
+package com.pm.parkinglot.models;
+
+public enum BillStatus {
+    PENDING,
+    PAID
 }

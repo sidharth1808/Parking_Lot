@@ -1,2 +1,33 @@
-package com.pm.parkinglot.models;public class ParkingFloor {
+package com.pm.parkinglot.models;
+
+import java.util.List;
+
+public class ParkingFloor {
+    private int floorNumber;
+    private List<ParkingSpot> parkingSpots;
+    private ParkingFloorStatus parkingFloorStatus;
+
+    public int getFloorNumber() {
+        return floorNumber;
+    }
+
+    public void setFloorNumber(int floorNumber) {
+        this.floorNumber = floorNumber;
+    }
+
+    public List<ParkingSpot> getParkingSpots() {
+        return parkingSpots;
+    }
+
+    public void setParkingSpots(List<ParkingSpot> parkingSpots) {
+        this.parkingSpots = parkingSpots;
+    }
+
+    public ParkingFloorStatus getParkingFloorStatus() {
+        return parkingFloorStatus;
+    }
+
+    public void setParkingFloorStatus(ParkingFloorStatus parkingFloorStatus) {
+        this.parkingFloorStatus = parkingFloorStatus;
+    }
 }

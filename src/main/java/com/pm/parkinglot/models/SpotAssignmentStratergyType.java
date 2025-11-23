@@ -1,2 +1,6 @@
-package com.pm.parkinglot.models;public enum SpotAssignmentStratergyType {
+package com.pm.parkinglot.models;
+
+public enum SpotAssignmentStratergyType {
+    NEAREST,
+    CHEAPEST
 }

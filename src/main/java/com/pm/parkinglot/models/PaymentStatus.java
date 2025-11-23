@@ -1,2 +1,7 @@
-package com.pm.parkinglot.models;public enum PaymentStatus {
+package com.pm.parkinglot.models;
+
+public enum PaymentStatus {
+    SUCCESS,
+    FAILED,
+    PENDING,
 }
